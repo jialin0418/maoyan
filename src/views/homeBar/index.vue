@@ -1,6 +1,7 @@
 <template>
-  <div>首页
+  <div class="homepage">
     <HeaderWarp />
+    首页
   </div>
 </template>
 
@@ -15,4 +16,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.homepage{
+  padding: 5px;
+}
 </style>
