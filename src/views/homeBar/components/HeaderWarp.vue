@@ -8,6 +8,7 @@
       <TabsBar :title="navigation">
         <router-view></router-view>
       </TabsBar>
+    
     </div>
   </div>
 </template>
@@ -15,30 +16,34 @@
 <script>
 export default {
   name: "HeaderWarp",
+
   data() {
     return {
       hotSearchWord: ["这个杀手不太冷", "四海", "喜羊羊与灰太狼"],
       navigation: [
-        { title: "推荐", to: "" },
+        {
+          title: "推荐",
+          to: "/homeBar/recommendBar",
+        },
         {
           title: "热片解读",
-          to: "",
+          to: "/homeBar/UnscrambleBar",
         },
         {
           title: "预告片",
-          to: "",
+          to: "/homeBar/NoticeBar",
         },
         {
           title: "说电影",
-          to: "",
+          to: "/homeBar/filmBar",
         },
         {
           title: "佳片",
-          to: "",
+          to: "/homeBar/goodBar",
         },
         {
           title: "剧综",
-          to: "",
+          to: "/homeBar/dramaBar",
         },
       ],
     };

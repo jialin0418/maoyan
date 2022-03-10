@@ -1,9 +1,12 @@
 <template>
-  <nav class="Tabs_nav">
-    <router-link  v-for="(item, index) in title" :key="index">{{
-      item.title
-    }}</router-link>
-  </nav>
+  <div>
+    <nav class="Tabs_nav">
+      <router-link v-for="(item, index) in title" :key="index" :to="item.to">{{
+        item.title
+      }}</router-link>
+    </nav>
+    <slot></slot>
+  </div>
 </template>
 
 <script>
@@ -12,10 +15,9 @@ export default {
   props: {
     title: Object,
   },
-  created(){
+  created() {
     console.log(this.title);
-  }
- 
+  },
 };
 </script>
 

@@ -1,10 +1,10 @@
 <template>
-  <div>推荐</div>
+  <div>预告片</div>
 </template>
 
 <script>
 export default {
-  name: "RecommendBar",
+  name: "NoticeBar",
 };
 </script>
 

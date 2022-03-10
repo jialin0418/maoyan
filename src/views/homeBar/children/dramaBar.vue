@@ -1,10 +1,10 @@
 <template>
-  <div>推荐</div>
+  <div>剧综</div>
 </template>
 
 <script>
 export default {
-  name: "RecommendBar",
+  name: "dramaBar",
 };
 </script>
 

@@ -13,7 +13,40 @@ const routes = [
       {
         path: '/homeBar',
         name: 'homeBar',
-        component: () => import('@/views/homeBar')
+        redirect: '/homeBar/recommendBar',
+        component: () => import('@/views/homeBar'),
+        children: [
+          {
+            path: '/homeBar/recommendBar',
+            name: 'RecommendBar',
+            component: () => import('@/views/homeBar/children/recommendBar'),
+          },
+          {
+            path: '/homeBar/UnscrambleBar',
+            name: 'UnscrambleBar',
+            component: () => import('@/views/homeBar/children/UnscrambleBar'),
+          },
+          {
+            path: '/homeBar/NoticeBar',
+            name: 'NoticeBar',
+            component: () => import('@/views/homeBar/children/NoticeBar'),
+          },
+          {
+            path: '/homeBar/filmBar',
+            name: 'filmBar',
+            component: () => import('@/views/homeBar/children/filmBar'),
+          },
+          {
+            path: '/homeBar/goodBar',
+            name: 'goodBar',
+            component: () => import('@/views/homeBar/children/goodBar'),
+          },
+          {
+            path: '/homeBar/dramaBar',
+            name: 'dramaBar',
+            component: () => import('@/views/homeBar/children/dramaBar'),
+          },
+        ]
       },
       {
         path: '/cinemaBar',
