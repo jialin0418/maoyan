@@ -39,7 +39,6 @@ export default {
           this.back = 1;
         } else {
           this.back = 0;
-          console.log(this.$route.fullPath);
         }
       },
       immediate: true,
@@ -48,7 +47,6 @@ export default {
   methods: {
     change(index) {
       this.activeClass = index;
-      console.log(this.activeClass);
     },
   },
 };
